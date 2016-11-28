@@ -89,7 +89,7 @@ export class ProductsController extends ODataController {
   @Edm.EntityType(Product)
   async getCheapest(): Promise<Product> {
     const db = await connect();
-    const {rows} = await db.query(`SELECT * FROM "Products" ORDER BY "UnitPrice"`);
+    const {rows} = await db.query(`SELECT * FROM "Products" ORDER BY "UnitPrice" LIMIT 1`);
     return convertResults(rows)[0];
   }
 

@@ -48,7 +48,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "odata-v4-pg": "^0.1.0",
-    "odata-v4-server": "^0.1.15",
+    "odata-v4-server": "rc",
     "pg": "^6.1.0",
     "ramda": "^0.22.1"
   }
