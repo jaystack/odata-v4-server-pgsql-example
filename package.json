@@ -12,14 +12,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "test": "mocha test/*.spec.js --reporter mochawesome --reporter-options reportDir=report,reportName=odata-v4-server,reportTitle=\"OData V4 Server\"",
-    "pretest": "npm run build",
-    "docker-build": "docker build -t odata-v4-server-pgsql-example .",
-    "docker-run": "docker run --name odata-v4-server-pgsql-example --link mongo:mongo -p 3000:3000 -d odata-v4-server-pgsql-example",
-    "docker-stop": "docker stop odata-v4-server-pgsql-example",
-    "docker-clean-containers": "docker rm $(docker ps -a -q)",
-    "docker-clean-images": "docker rmi $(docker images -a -q)",
-    "docker-clean": "npm run docker-clean-containers && npm run docker-clean-images",
-    "docker-enter": "docker exec -ti odata-v4-server-pgsql-example bash"
+    "pretest": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -48,7 +41,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "odata-v4-pg": "^0.1.0",
-    "odata-v4-server": "rc",
+    "odata-v4-server": "^0.1.18",
     "pg": "^6.1.0",
     "ramda": "^0.22.1"
   }
