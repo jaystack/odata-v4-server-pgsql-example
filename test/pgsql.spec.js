@@ -64,7 +64,7 @@ describe("OData V4 example server", () => {
         createTest("should get products by filter and select", "GET /Products?$filter=Name eq 'Chai'&$select=Name,UnitPrice", {
             statusCode: 200,
             body: {
-                "@odata.context": "http://localhost/$metadata#Products",
+                "@odata.context": "http://localhost/$metadata#Products(Name,UnitPrice)",
                 value: products.filter(product => product.Name == "Chai").map((product) => {
                     return {
                         Name: product.Name,
@@ -458,7 +458,7 @@ describe("OData V4 example server", () => {
         createTest("should get categories by filter and select", "GET /Categories?$filter=Name eq 'Beverages'&$select=Name,Description", {
             statusCode: 200,
             body: {
-                "@odata.context": "http://localhost/$metadata#Categories",
+                "@odata.context": "http://localhost/$metadata#Categories(Name,Description)",
                 value: categories.filter(category => category.Name == "Beverages").map((category) => {
                     return {
                         Name: category.Name,
