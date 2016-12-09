@@ -7,7 +7,7 @@ This example uses **JayStack OData V4 Server [(odata-v4-server)](https://github.
 You can read more about **JayStack OData V4 Server** in our tutorial at ...
 
 Also there are sevaral other examples on **JayStack OData V4 Server (odata-v4-server)**:
-- [client example using React](https://github.com/jaystack/odata-v4-client-examples)
+- [client example using React](https://github.com/jaystack/odata-v4-server-react-client-example)
 - [server example using MySql](https://github.com/jaystack/odata-v4-mysql-example)
 - [server example using MSSql](https://github.com/jaystack/odata-v4-server-mssql-example)
 - [server example using MongoDb](https://github.com/jaystack/odata-v4-server-mongodb-example)
@@ -19,7 +19,7 @@ You have to create the database manually using this command after connecting to 
 CREATE DATABASE northwind;
 ```
 
-### Setting up the connection string to your MS SQL Server
+### Setting up the connection
 You may customize the db connection options
 by editing [connect.ts](https://github.com/jaystack/odata-v4-server-pgsql-example/blob/master/src/utils/connect.ts#L29-L30).
 By default, these are the options:
