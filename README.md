@@ -7,7 +7,7 @@ This example uses **JayStack OData V4 Server [(odata-v4-server)](https://github.
 You can read more about **JayStack OData V4 Server** in our tutorial at ...
 
 Also there are sevaral other examples on **JayStack OData V4 Server (odata-v4-server)**:
-- [client example using React, etc. ---  to be checked](https://github.com/jaystack/odata-v4-client-examples)
+- [client example using React](https://github.com/jaystack/odata-v4-client-examples)
 - [server example using MySql](https://github.com/jaystack/odata-v4-mysql-example)
 - [server example using MSSql](https://github.com/jaystack/odata-v4-server-mssql-example)
 - [server example using MongoDb](https://github.com/jaystack/odata-v4-server-mongodb-example)
@@ -25,10 +25,10 @@ by editing [connect.ts](https://github.com/jaystack/odata-v4-server-pgsql-exampl
 By default, these are the options:
 ```js
 const pool = new pg.Pool({
-    user: 'postgres',
-    password: 'postgres',
-    database: 'northwind'
-  });
+  user: 'postgres',
+  password: 'postgres',
+  database: 'northwind'
+});
 ```
 By default, the database will listen on `port` `5432` therefore it is not set above.
 
