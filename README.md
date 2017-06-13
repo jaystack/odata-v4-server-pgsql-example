@@ -11,7 +11,7 @@ You can read more about **JayStack OData V4 Server** in our tutorial at ...
 
 Also there are sevaral other examples on **JayStack OData V4 Server (odata-v4-server)**:
 - [client example using React](https://github.com/jaystack/odata-v4-server-react-client-example)
-- [server example using MySql](https://github.com/jaystack/odata-v4-mysql-example)
+- [server example using MySql](https://github.com/jaystack/odata-v4-server-mysql-example)
 - [server example using MSSql](https://github.com/jaystack/odata-v4-server-mssql-example)
 - [server example using MongoDb](https://github.com/jaystack/odata-v4-server-mongodb-example)
 
